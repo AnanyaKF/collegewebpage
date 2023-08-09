@@ -1,0 +1,479 @@
+.college-header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 46, 46);
+    padding: 20px; /* Adding padding to the whole header for spacing */
+    padding-left: 50px;
+}
+
+.college-logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px; /* Adding right margin to the logo for spacing */
+}
+
+.college-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    word-spacing: 8px;
+    padding-right: 50px;
+}
+.navbar {
+    width: 100%;
+    padding: 3px 1vw;
+    z-index: 10;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li:first-child {
+    flex: 1;
+}
+.navbar ul h4 {
+    font-family: serif;
+    color: beige;
+}
+.container p {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.container button:hover {
+    background: darkgoldenrod;
+}
+.navbar ul a {
+    margin-left: 20px;
+    font-size: 19px;
+}
+.navbar ul a:hover {
+    color: darkgoldenrod;
+}
+.container p {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.drpdown:hover .drpdown-menu{
+    display: block !important;
+}
+.c-img {
+    max-width: 130%;
+    max-height: 500px; 
+    margin: 0 auto;
+}
+
+.content-box  {
+    padding: 15px;
+    background-color:darkslategray;
+    width: 80%;
+    margin: auto;
+}
+
+.thumbnail:hover img {
+    opacity: 0.8;
+    
+}
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.column {
+    width: calc(33.33% - 20px);
+    padding: 2%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.column h2 {
+    color: rgb(20, 5, 83);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.column p {
+    color: rgb(48, 45, 45);
+}
+
+@media (max-width: 767px) {
+    .column-container {
+        padding: 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+.text {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2c0b79;
+    border-radius: 25px;
+    position: relative;
+    color: rgb(241, 15, 15);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdf18;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+        
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #321ee4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d0fb9;
+}
+
+.page-container {
+    background-color: rgb(46, 59, 59);
+    padding: 20px;
+}
+
+/* aboutus */
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 20px;
+    column-count: 3;
+    column-gap: 30px;
+    color: lightseagreen;
+}
+
+.text-container p {
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+}
+.text-container h2{
+    color: #000;
+
+}
+
+@media (max-width: 767px) {
+    .text-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 20px;
+        column-count: 1;
+        column-gap: 0;
+    }
+}
+
+/* administration */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text {
+    position: absolute;
+    top: 70%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 50px; 
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+.box-text {
+    color: #081669;
+    font-size: 18px; 
+    font-size: x-large;
+    word-spacing: 2%;
+    font-weight: bold; 
+}
+/*admissions*/
+
+  /* Define the animation */
+  @keyframes changeColor {
+    0% {
+        color: #3309ca;
+    }
+    50% {
+        color: #ff0000;
+    }
+    100% {
+        color: #333;
+    }
+}
+
+.color-animation {
+    color: #1636ec;
+    animation: changeColor 3s infinite;
+}
+
+.smaller-text {
+    font-size: 2.3rem; 
+}
+ @keyframes changeColor {
+                    0% {
+                        color: #3309ca;
+                    }
+                    50% {
+                        color: #ff0000;
+                    }
+                    100% {
+                        color: #333;
+                    }
+                }
+        
+                .color-animation {
+                    color: #1636ec;
+                    animation: changeColor 3s infinite;
+                }
+        
+                
+        
+                .shadow-content {
+                    background-color: #002855;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px 2px rgba(24, 23, 23, 0.3);
+                }
+
+                .file-input {
+                    display: inline-block;
+                    background-color: #f0f0f0;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                
+                .file-input input[type="file"] {
+                    display: none;
+                }
+                
+                .form-container {
+                    display: flex;
+                    gap: 10px; 
+                }
+                
+                .form-container .file-input {
+                    flex: 1; 
+                }
+                
+                .form-container .file-input i {
+                    margin-right: 10px; 
+                }
+                
+                input[type="submit"] {
+                    padding: 10px 20px;
+                    background-color: #321ee4;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                input[type="submit"]:hover {
+                    background-color: #1b0ab1;
+                }
+
+
+                .column-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                }
+            
+                .column {
+                    flex: 1;
+                    margin-bottom: 20px;
+                }
+                .green-button {
+                    background-color: rgb(8, 212, 134);
+                    width: 100%;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            
+                .green-button:hover {
+                    background-color: darkgreen;
+                }
+
+                /*campuslife*/
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    text-align: center;
+                    padding: 20px;
+                }
+              
+                .flex-container img {
+                    width: 500px; 
+                    height: auto;
+                    margin-right: 20px; 
+                    flex: 1;
+                    padding: 10px;
+                }
+              
+                .flex-container p {
+                    flex: 1; 
+                    padding: 20px;
+                    color: black;
+                    font-style: italic;
+                    font-weight: 500;
+                    font-size: larger;
+                    text-align: center;
+                }
+
+    /*codeofethics*/
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 39px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: 250;
+    }
+
+    /*infrastructure*/
+   
+
+    .box-text {
+        color: #ffffff;
+        font-size: 18px;
+        font-family: cursive;
+        font-size: x-large;
+        word-spacing: 5%;
+    }
+
+    .image-container {
+        display: flex;
+    }
+
+    .image-column {
+        flex: 1;
+        box-sizing: border-box;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*IQAC*/
+    .text-primary {
+        color: #03034d !important;
+    }
+    
+    
+    
+    .text-info {
+        color: #a1954d !important;
+    }
+    
+    .font-italic {
+        font-style: italic;
+    }
+    
+    .font-weight-bold {
+        font-weight: bold;
+    }
+    /*sports*/
+    .line {
+        border-top: 5px solid rgb(53, 199, 97);
+        width: 1300px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    /* அறிவுச்சுடர் */
+      .content-container {
+            padding: 2% 3%; 
+        }
+
+        .content-text {
+            color: black;
+            font-size: larger;
+        }
+
+       
+    
+        
+    
+       
+   
+
+              
+
+
+
+
+
+
+
+
+
+
+
